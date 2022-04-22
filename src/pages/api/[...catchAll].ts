@@ -1,4 +1,4 @@
-import { Backend } from "../../backend/main";
+import { Backend } from "../../backend";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default (req: NextApiRequest, res: NextApiResponse) => new Promise(async resolve => {

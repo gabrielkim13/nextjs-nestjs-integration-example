@@ -4,7 +4,11 @@ import { Controller, Get, Param } from "@nestjs/common";
 export class AppController {
   @Get()
   randomNumber() {
-    return Math.random() * 100;
+    const randomNumber = Math.random() * 100;
+
+    console.log(randomNumber, new Date());
+
+    return randomNumber;
   }
 
   @Get("/:number")

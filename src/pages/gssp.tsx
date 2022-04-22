@@ -1,6 +1,6 @@
 import { InferGetServerSidePropsType } from "next";
 import { AppController } from "../backend/app/app.controller";
-import { Backend } from "../backend/main";
+import { Backend } from "../backend";
 
 export async function getServerSideProps() {
   const app = await Backend.getApp();
